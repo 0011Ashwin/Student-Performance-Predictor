@@ -1,0 +1,13 @@
+pandas==2.0.0
+numpy==1.24.3
+scikit-learn==1.2.2
+streamlit==1.25.0
+plotly==5.15.0
+matplotlib==3.7.1
+streamlit-lottie==0.0.5
+requests==2.31.0
+Pillow==10.0.0
+scipy==1.10.1
+markdownlit==0.0.5
+
+#-e .
