@@ -5,7 +5,19 @@ import os
 import sys
 import pickle
 import time
-from src.exception import CustomException
+# Try to import CustomException, but don't fail if it's not available
+try:
+    from src.exception import CustomException
+except ImportError:
+    # Define a simple CustomException class as fallback
+    class CustomException(Exception):
+        def __init__(self, error_message, error_detail=None):
+            super().__init__(error_message)
+            self.error_message = error_message
+            
+        def __str__(self):
+            return self.error_message
+
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
