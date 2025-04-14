@@ -8,6 +8,4 @@ streamlit-lottie>=0.0.3
 requests>=2.25.0
 Pillow>=9.0.0
 scipy>=1.8.0
-
-# Removed markdownlit as it may be causing issues
-# -e .
+importlib-metadata>=4.0.0 
